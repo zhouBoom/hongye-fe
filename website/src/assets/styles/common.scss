@@ -1,0 +1,35 @@
+@import './mixin.scss';
+
+@include block(layout) {
+    @include wh100;
+    @include flex-hidden;
+    overflow: hidden;
+    @include element(header) {
+        height: 60px;
+    }
+    @include element(body) {
+        @include flex-box() {
+            flex: 1;
+        };
+        @include element(menu) {
+            width: 200px;
+        }
+        @include element(container) {
+            padding: 16px;
+            @include flex-auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

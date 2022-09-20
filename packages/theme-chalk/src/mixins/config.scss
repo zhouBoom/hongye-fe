@@ -1,0 +1,13 @@
+$namespace: 'h'; // 命名空间
+$state-prefix: 'is-'; // 状态
+$modifier-separator: '--'; // 元素修饰作用 
+$element-separator: '__'; // 元素直接的分割
+
+// 示例：
+// <div class="w-xxx">
+//         <button class="w-button--primary"></button>
+//         <button class="is-readonly is-disabled"></button>
+//     <div class="w-xxx__header"></div>
+//     <div class="w-xxx__body"></div>
+//     <div class="w-xxx__footer"></div>
+// </div>
