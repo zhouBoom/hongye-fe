@@ -7,3 +7,5 @@ declare module '*.vue' {
     // 导出组件类型
     export default component;
 }
+
+declare module '*.md' {}

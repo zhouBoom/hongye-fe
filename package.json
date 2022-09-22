@@ -5,13 +5,18 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "webpack serve --config ./website/webpack.config.js"
+    "dev": "webpack serve --config ./website/webpack.config.js",
+    "build": "webpack --config ./builds/webpack.config.js",
+    "build:esm-bundle": "rollup -c ./builds/rollup.config.bundle.js",
+    "build:esm": "rollup -c ./builds/rollup.config.js",
+    "build:theme": " gulp build --gulpfile packages/theme-chalk/gulpfile.js"
   },
   "devDependencies": {
     "@babel/core": "^7.19.1",
     "@babel/plugin-transform-typescript": "^7.19.1",
     "@babel/preset-env": "^7.19.1",
     "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-node-resolve": "^14.1.0",
     "@vue/compiler-sfc": "^3.2.39",
     "babel-loader": "^8.2.5",
     "babel-plugin-module-resolve": "^1.4.3",
@@ -24,6 +29,9 @@
     "gulp-rename": "^2.0.0",
     "html-webpack-plugin": "^5.5.0",
     "lerna": "^5.5.1",
+    "rollup": "^2.79.0",
+    "rollup-plugin-typescript2": "^0.34.0",
+    "rollup-plugin-vue": "^6.0.0",
     "sass": "^1.54.9",
     "sass-loader": "^13.0.2",
     "style-loader": "^3.3.1",
@@ -34,6 +42,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
+    "@kangc/v-md-editor": "^2.3.15",
     "typescript": "^4.8.3",
     "vue": "^3.2.36",
     "vue-router": "^4.1.5"
