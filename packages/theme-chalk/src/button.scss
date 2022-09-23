@@ -38,10 +38,7 @@
 
     // .h-button--primary
     @include butt(primary) {
-        // @include button-type($--color-white, $--color-primary, $--color-primary);
-        color: $--color-white;
-        background-color: $--color-primary;
-        border: 1px solid $--color-primary;
+        @include button-type($--color-white, $--color-primary, $--color-primary);
     }
     @include butt(success) {
         @include button-type($--color-white, $--color-success, $--color-success);

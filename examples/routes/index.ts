@@ -1,5 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Layout from '../components/Layout.vue'
+import Button from '../docs/button.vue'
+// import markdownTxt from '../markdown/button.md'
 
 const router = createRouter({
     history: createWebHashHistory(),
@@ -23,7 +25,8 @@ const router = createRouter({
                         icon: 'el-icon-document',
                         title: '首页'
                     },
-                    component: () => import("../docs/button.vue")
+                    component: Button,
+                    // props: {markdownTxt: markdownTxt}
                 }
             ]
         }

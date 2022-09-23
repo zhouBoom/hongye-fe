@@ -11,9 +11,12 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        prot: 9002,
+        port: 9002,
         open: true,
         hot: true
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js', '.vue']
     },
     plugins: [
         new VueLoaderPlugin(), // vue-loader 解析.vue文件
@@ -24,8 +27,21 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.(js|ts)x?$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader'
+            },
+            {
               test: /\.vue$/,
               loader: 'vue-loader'
+            },
+            {
+                test: /\.(scss|css)$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
             }
         ]
     }
