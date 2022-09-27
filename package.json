@@ -43,8 +43,6 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "@kangc/v-md-editor": "^2.3.15",
-    "markdown-it": "^13.0.1",
     "typescript": "^4.8.3",
     "vue": "^3.2.36",
     "vue-router": "^4.1.5"
