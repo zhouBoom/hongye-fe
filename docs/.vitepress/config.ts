@@ -1,6 +1,6 @@
 import { markdownConfig } from './plugins/markdown-plugin';
 export default {
-  base: process.env.NODE_ENV === 'production'?'/example/': '/',
+  base: process.env.NODE_ENV === 'production'?'/': '/',
   outDir: '../dist',
   title: '前端开发文档',
   description: 'Just playing around.',
