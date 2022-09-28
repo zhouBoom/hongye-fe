@@ -1,11 +1,11 @@
-# `row`
+# `tabs`
 
 > TODO: description
 
 ## Usage
 
 ```
-const row = require('row');
+const tabs = require('tabs');
 
 // TODO: DEMONSTRATE API
 ```

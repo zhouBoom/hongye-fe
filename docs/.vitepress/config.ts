@@ -38,6 +38,7 @@ export default {
           text: '组件',
           items: [
             { text: '按钮', link: '/component/button/' },
+            { text: '标签组', link: '/component/tabs/' },
           ],
         },
       ],

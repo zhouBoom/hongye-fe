@@ -1,10 +1,13 @@
-<!-- 12321 -->
 <template>
-    <h-button type="primary">按钮111</h-button>
+    <div>
+        <slot />
+    </div>
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
+
 export default defineComponent({
+    name: 'HTab',
     setup() {
         
     },

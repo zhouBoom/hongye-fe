@@ -1,7 +1,9 @@
 import { App } from 'vue';
 import Button from '@hongye-ui/button/src/index.vue';
+import Tabs from '@hongye-ui/tabs/src/index.vue'
 const components = [
-    Button
+    Button,
+    Tabs
 ];
 
 const install = (app: App): void => {

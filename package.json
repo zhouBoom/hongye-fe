@@ -1,6 +1,7 @@
 {
-  "name": "root",
-  "private": true,
+  "name": "hongye-ui",
+  "version": "1.0.0",
+  "private": false,
   "workspaces": [
     "packages/*"
   ],
